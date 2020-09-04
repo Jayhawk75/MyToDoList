@@ -1,0 +1,27 @@
+body {
+    background-color: #5393d3;
+    font: italic small-caps bold 16px/2 cursive;
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: #5cdb95;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-weight: 300;
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+}
+
+.todo-wrapper p {
+    color: black;
+    margin: 5px 0;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
