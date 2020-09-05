@@ -1,11 +1,14 @@
 body {
-    background-color: #5393d3;
     font: italic small-caps bold 16px/2 cursive;
+    background: url(img/brackground_desk.jpeg) lightgrey;
+    background-attachment: fixed;
+    background-size: cover;
+   
 }
 
 .todo-wrapper {
     margin-top: 50px;
-    background-color: #5cdb95;
+    background-color: white;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -24,4 +27,63 @@ body {
 
 .todo-wrapper ol {
     margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-wrapper .button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+#button-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+    background-color: #49B749;
+}
+
+.todo-wrapper #empty-button {
+    background-color: #9B1C20;
+}
+
+.todo-wrapper #save-button {
+    background-color: #49B749;
 }
