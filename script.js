@@ -19,13 +19,6 @@ function emptyList() {
     alert("Clear list button clicked!");
 }
 
-var saveButton = document.getElementById("save-button");
-saveButton.addEventListener("click", saveList);
-
-function saveList() {
-    alert("Save button clicked!");
-}
-
 var toDoEntryBox = document.getElementById("todo-entry-box");
 var toDoList = document.getElementById("todo-list");
 
@@ -33,6 +26,7 @@ function newToDoItem(itemText, completed) {
     var toDoItem = document.createElement("li");
     var toDoText = document.createTextNode(itemText);
     toDoItem.appendChild(toDoText);
+    
     if (completed) {
     toDoItem.classList.add("completed");
     }
@@ -69,3 +63,4 @@ function emptyList() {
         toDoItems.item(0).remove();
     }
 }
+
